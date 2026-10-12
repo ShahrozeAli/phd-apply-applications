@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: phd
+      POSTGRES_PASSWORD: phd
+      POSTGRES_DB: phd_bot
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql+psycopg://phd:phd@db:5432/phd_bot
+      CORS_ORIGINS: http://localhost:5173,http://localhost:8080
+    volumes:
+      - ./config:/app/config
+      - ./data:/app/data
+      - ./application_packages:/app/application_packages
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:

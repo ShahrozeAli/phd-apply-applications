@@ -1,0 +1,105 @@
+# Master profile. Edit this file or use the dashboard. Empty academic fields stay empty.
+# The bot must not invent degrees, grades, publications, or test scores.
+
+identity:
+  given_name: Shehroze
+  family_name: ""
+  preferred_name: Shehroze
+  nationality: Pakistani
+  current_country: Pakistan
+  city: ""
+  email: ""
+  phone: ""
+  linkedin: ""
+  orcid: ""
+  personal_website: ""
+
+professional:
+  profession: Software Engineer
+  years_experience: 4
+  technical_background:
+    - JavaScript
+    - software engineering
+    - web application development
+    - healthcare systems
+    - previous IoT experience
+  current_employer: ""
+  employment_history: []
+
+preferences:
+  preferred_degree: PhD
+  preferred_destination: Europe
+  funding_requirement: fully_funded
+  prefer_no_application_fee: true
+  research_interests: []
+  target_fields:
+    - Computer Science
+    - Software Engineering
+    - Artificial Intelligence
+    - Machine Learning
+    - Data Science
+    - Natural Language Processing
+    - Computer Vision
+    - Healthcare Informatics
+    - Health Technology
+    - Medical Software Systems
+    - Digital Health
+    - Telemedicine
+    - Biomedical Informatics
+    - Human-Computer Interaction
+    - Distributed Systems
+    - Cloud Computing
+    - Internet of Things
+    - Cybersecurity
+    - Information Systems
+    - Software Architecture
+    - Applied Computing
+
+academic:
+  highest_completed_degree: null
+  bachelor:
+    degree_title: null
+    field: null
+    institution: null
+    country: null
+    year: null
+    gpa: null
+    gpa_scale: null
+    thesis_title: null
+  masters:
+    status: unknown
+    degree_title: null
+    field: null
+    institution: null
+    country: null
+    year: null
+    expected_completion: null
+    gpa: null
+    gpa_scale: null
+    thesis_title: null
+    thesis_abstract: null
+  english:
+    test_type: null
+    overall_score: null
+    subscores: {}
+    test_date: null
+    medium_of_instruction_waiver: null
+  research_experience: []
+  publications: []
+  awards: []
+  references: []
+
+documents_on_hand:
+  cv: false
+  bachelor_transcript: false
+  bachelor_degree_certificate: false
+  masters_transcript: false
+  masters_degree_certificate: false
+  english_test_report: false
+  passport_scan: false
+  recommendation_letters: 0
+
+approvals:
+  auto_send_emails: false
+  auto_submit_applications: false
+  email_automation_enabled: false
